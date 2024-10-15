@@ -1,0 +1,1103 @@
+*{
+    padding : 0px ;
+    margin : 0px ;
+}
+
+#parent-div{
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;           
+    box-sizing: border-box; 
+}
+
+
+#background-image{
+    width : 1240px ;
+    height : 1800px ;
+    background-image : url("https://hinakhan.com.pk/wp-content/uploads/2024/01/pexels-altin-duvak-moda-19250017-scaled.jpg");
+    background-size: cover ;
+    align-content: center;
+    background-attachment: fixed; 
+}
+
+#primary-header{
+    width : 1240px ;
+    height : 32px ;
+    background-color: white ;
+    /* position: relative; */
+}
+
+#below-header{
+    width : 1240px ;
+    height : 60px ;
+    background-color: white ;
+    display : flex ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a:hover{
+    color : #36a7ad ;
+}
+
+a{
+    font-style: baskervvile, serif ;
+    color : #454f5e ;
+    text-decoration : none ;
+    display : inline;
+    
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 200px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+}
+
+.dropdown-content a {
+    color: #454f5e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #36a7ad;
+}
+
+/* Show the dropdown when hovering over the main link */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover a {
+    color: #36a7ad; /* Change color on hover of dropdown */
+}
+
+#container{
+    width : 1240px ;
+    height : 800px ;
+    background-color: rgba(81, 79, 79, 0.1) ;
+    /* background-color: rgb(190, 182, 184) ; */
+    display:flex ;
+}
+
+#text{
+    width : 356px ;
+    height : 320px ;
+    /* background-color: pink; */
+    margin-left: 20px ;
+    margin-top: 250px ;
+}
+
+#heading5{
+
+    width : 346px ;
+    height : 45px ;
+    color : white ;
+    font-family: "Playfair Display Sc", serif ;
+    padding-left: 10px 
+}
+
+#heading1{
+    font-size: 54px;
+    font-family: "Playfair Display Sc",serif;
+    color : white ;
+    padding-left: 15px ;
+}
+
+#paragraph1{
+    color : white ;
+    padding-left: 15px ;
+    font-size: 18px ;
+    font-family: "Playfair Display Sc",serif;
+    line-height: 28px;
+}
+
+#luxury-bridals-button{
+    margin-top: 30px ;
+    margin-left: 16px ;
+    height :43px ;
+    width : 147px ;
+    background-color: rgba(96, 92, 92, 1);
+    border : 2px white solid ;
+    color : white ;
+}
+
+#luxury-bridals{
+    color : white ;
+}
+
+#empty-div{
+    width : 100% ;
+    height : 100% ;
+    background-color: white ;
+}
+
+#brushofperfection{
+    padding-top: 25px ;
+    width : 1220px ;
+    height: 50px ;
+    text-align: center;
+    font-family: "Playfair Display sc",serif;
+    font-size: 20px ;
+    color : #1B9C85 ;
+}
+
+#hinakhan{
+    font-family: "Playfair Display sc",serif;
+    padding-top: 20px ;
+    width : 1220px ;
+    height : 70px ;
+    text-align: center;
+    font-size: 50px;
+    color : #094304 ;
+}
+
+#origin-info{
+    width : 1202px ;
+    height : 40px ;
+    text-align: center;
+    color : #7A7A7A ;
+    font-size: 20px ;
+    font-family: "Roboto",serif ;
+}
+
+/* #carousel-animation{
+    background-color: rgb(211, 109, 126);
+    width : 1240px; 
+    height : 800px ;
+} */
+
+/* jhdja */
+
+.slides_img{
+    width:390px;
+    height:600px;
+    background-color: rgb(219, 219, 219);
+    margin:10px;
+    display:inline-block;
+    /* border:1px solid grey; */
+  }
+
+  .slider{
+      margin-bottom:100px;
+      animation:carousal 8s ease-out 10s infinite;
+      display:inline-block;
+  }
+  .slide_bottom{
+      width:100%;
+      height:100px;
+  }
+  img{
+      width:100%;
+      height:80%
+  }
+  @keyframes carousal {
+      0%{
+          transform:translateX(0);
+      }
+      25%{
+          transform:translateX(-25%);
+      }
+      50%{
+          transform:translateX(-50%);
+      }
+      75%{
+          transform:translateX(-75%);
+      }
+      100%{
+          transform:translateX(-100%);
+      }
+  }
+
+  #main_slider{
+      white-space: nowrap;
+      overflow: hidden;
+  }
+
+  .slider-heading{
+    /* font-size: 18px ; */
+    font-family: "Baskervville", "Playfair Display" , serif ;
+    color : #0F172A ; 
+    text-align: center;
+    margin : 15px ;
+  }
+
+  .slider-price{
+    font-family: "Baskervville" , serif ;
+    margin : 10px ;
+    text-align: center;
+    color : #094304 ;
+  }
+
+
+/* jhjk */
+
+#empty-div2{
+    width : 1240px ;
+    height : 750px ;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#image1{
+    align-self: center;
+    width : 1024px ;
+    height : 700px ;
+    background-image: url(image.png);
+    background-size: cover;
+}
+
+
+#backgroundimage2{
+    width : 100% ;
+    height : 1000px ;
+    background-image: url(bgimage2.jpg);
+    background-size: cover ;
+    background-attachment: fixed; 
+    /* font-size: 0px ; */
+}
+
+
+#main-box{
+    
+    width : 1240px ;
+    height : 380px ;
+    background-color: white;
+    /* background-color: white; */
+}
+
+.box{
+    width : 410.65px ;
+    height : 330px ;
+    display: inline-block;
+    vertical-align: top;  /* Ensure boxes stay aligned at the top */
+    box-sizing: border-box;
+}
+
+
+#box1{
+    /* background-color: #846678; */
+    background-color: white;
+}
+
+#box2{
+    /* background-color: #1B9C85; */
+    background-color: white;
+}
+
+#box3{
+    /* background-color: #89a8d7; */
+    background-color: white;
+}
+
+.icon{
+    width : 68px ;
+    height : 65px ;
+    background-color: white ;
+    margin-left: 170px;
+}
+
+#icon1{
+    background-image: url(iconimage1.webp);
+    background-size: contain;
+}
+
+#icon2{
+    background-image: url(iconimage2.webp);
+    background-size: contain;
+}
+
+#icon3{
+    background-image: url(iconimage3.webp);
+    background-size: contain;
+}
+
+#signature-div{
+    height : 60px ;
+    width : 389px ;
+    padding-top: 5px ; 
+    padding-bottom: 5px ;
+
+}
+
+#signature-couture{
+    font-size: 28px ;
+    font-family: "Playfair Display sc",serif ;
+    color : #094304 ;
+    text-align: center;
+    
+}
+
+#signature-para-div{
+    width : 410px ;
+    height : 200px ;
+    background-color: white;
+}
+
+#signature-para{
+    text-align: center;
+    color : #7A7A7A ;
+    font-family: "Roboto",serif;
+    font-size : 17px ;
+    line-height: 28px ;
+}
+
+#international-shipping-div{
+    height : 60px ;
+    width : 410px ;
+    padding-top: 5px ; 
+    padding-bottom: 5px ;
+    background-color: white;
+}
+
+#international-heading{
+    font-size: 28px ;
+    font-family: "Playfair Display sc",serif ;
+    color : #094304 ;
+    text-align: center;
+}
+
+
+#international-para-div{
+    width : 410px ;
+    height : 200px ;
+    background-color: white;
+}
+
+#international-para{
+    text-align: center;
+    color : #7A7A7A ;
+    font-family: "Roboto",serif;
+    font-size : 17px ;
+    line-height: 28px ;
+}
+
+#customer-service-div{
+    height : 60px ;
+    width : 410px ;
+    padding-top: 5px ; 
+    padding-bottom: 5px ;
+    background-color: white ;
+}
+
+#customer-service-heading{
+    font-size: 28px ;
+    font-family: "Playfair Display sc",serif ;
+    color : #094304 ;
+    text-align: center;
+}
+
+#customer-para-div{
+    width : 410px ;
+    height : 200px ;
+    background-color: white;
+}
+
+#customer-para{
+    text-align: center;
+    color : #7A7A7A ;
+    font-family: "Roboto",serif;
+    font-size : 17px ;
+    line-height: 28px ;
+}
+
+#hinakhanbridals-empty-div{
+    width : 1240px ;
+    height : 350px ;
+    background-color: rgba(116, 113, 113, 0.3);
+}
+
+#hinakhanbridals-heading{
+    text-align: center;
+    font-size: 42px ;
+    color: white ;
+    font-family: "Playfair Display sc",serif ;
+    padding-top: 160px;
+}
+
+
+#small-empty-div{
+    width : 1240px ;
+    height : 100px ;
+    background-color: white ;
+}
+
+
+#bridal-looks-empty-div{
+    width : 1240px ;
+    height : 820px ;
+    background-color:white ;
+    padding-top: 40px ;
+    padding-bottom: 40px ;
+}
+
+#bridal-looks-heading-div{
+    width : auto ;
+    height : 70px ;
+    background-color: white ;
+    text-align: center;
+    padding-top: 10px ;
+}
+
+
+#bridal-looks-anchor{
+    font-size: 47px ;
+    color : #094304 ;
+    font-family :"Playfair Display sc",serif;
+}
+
+#bridal-looks-para-div{
+    width : 1240px ;
+    height : 60px ;
+    background-color: white ;
+    text-align: center;
+}
+
+#bridal-looks-para-div{
+    font-size: 16px ;
+    font-family: "Roboto", serif;
+    color : #54595F ;
+}
+
+
+
+#empty-images-div{
+    width : 1240px ;
+    height : 680px ;
+    background-color: white ;
+    display:flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+
+.img-div{
+    flex-wrap: wrap ;
+    width : 410px ;
+    height : 320px;
+    display :flex ;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.picture{
+    width : 250px ;
+    height : 320px ;
+    background-color: white ;
+    border : 0.5px solid black ;
+}
+
+#pic1{
+    background-image: url(image1.jpg);
+    background-size: cover;
+}
+
+#pic2{
+    background-image: url(image2.jpg);
+    background-size: cover;
+}
+
+#pic3{
+    background-image: url(image3.jpg);
+    background-size: cover;
+}
+
+#pic4{
+    background-image: url(image4.jpg);
+    background-size: cover;
+}
+
+#pic5{
+    background-image: url(image5.jpg);
+    background-size: cover;
+}
+
+#pic6{
+    background-image: url(image6.jpg);
+    background-size: cover;
+}
+
+
+#sofistication-grace-base-div{
+    width : 1240px ;
+    height : 770px ;
+    background-color: black ;
+}
+
+#sofistication-grace-heading-div{
+    width : 1240px ;
+    height : 50px ;
+    background-color: white;
+}
+
+#sofistication-grace-heading{
+    font-size : 22px ;
+    font-family: "Playfair Display sc",serif ;
+    color : #1B9C85 ;
+    text-align: center ;
+}
+
+#latest-products-div{
+    width : 1240px ;
+    height : 70px ;
+    background-color: white ;
+    text-align: center;
+}
+
+#latest-product-headings{
+    font-size: 42px ;
+    font-family: "Playfair Display sc",serif ;
+    color : #094304 ;
+}
+
+#latest-product-para-div{
+    width : 1240px ;
+    height : 40px ;
+    background-color: white;
+    text-align: center;
+}
+
+#latest-product-para{
+    font-size: 16px ;
+    font-family: "Roboto",serif;
+    color : #7A7A7A ;
+}
+
+#pictures-empty-div{
+    width : 1240px ;
+    height : 600px ;
+    /* background-color: gray ; */
+    background-color: white;
+    display: flex;
+    
+    
+}
+
+.imagesemptydiv{
+    width : 310px ;
+    height : 600px ;
+}
+
+/* #first-content-div{
+    background-color: orange;
+} */
+
+/* #second-content-div{
+    background-color: blue ;
+} */
+
+/* #third-content-div{
+    background-color: yellow ;
+} */
+
+/* #fourth-content-div{
+    background-color: pink ;
+} */
+
+
+.picture-div{
+    width : 280px ;
+    height : 280px ;
+    background-color: grey ;
+    margin-top: 10px ;
+    margin-left: 15px ;
+}
+
+
+#first-pic-div{
+    background-image: url(picture1.jpg);
+    background-size: cover  ;
+}
+
+#second-pic-div{
+    background-image: url(picture2.jpg);
+    background-image: cover ;
+}
+
+#third-pic-div{
+    background-image: url(picture3.jpg);
+    background-size: cover ;
+}
+
+#fourth-pic-div{
+    background-image: url(picture4.webp);
+    background-size: cover ;
+}
+
+
+.button{
+    width : 278px ;
+    height : 43px ;
+    text-align: start;
+    padding-left: 10px ;
+    margin-top: 20px ;
+    margin-left: 15px ;
+    color : rgb(82, 82, 82) ;
+    font-size: 15px ;
+    background-color: white ;
+    border : 1px solid black ;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.hollow-div{
+    width : 278px ;
+    height : 80px ;
+    background-color: white;
+    margin-top: 20px ;
+    margin-left: 15px ;
+}
+
+
+.heading1122{
+    font-size: 20px ;
+    color : #0F172A ;
+}
+
+.price-div{
+    width : 278px ;
+    height : 40px ;
+    background-color: white ;
+    margin-top: 10px ;
+    margin-left: 15px ;
+    font-size: 18px ;
+}
+
+#yes-button{
+    width : 40px ;
+    height : 30px ;
+    background-color: white ;
+    color : rgb(68, 67, 67) ;
+    margin : 15px ;
+    border : 1px solid rgb(73, 72, 72) ;
+    border-radius: 5px ;
+}
+
+#no-button{
+    width : 40px ;
+    height : 30px ;
+    background-color: white ;
+    color : rgb(68, 66, 66) ;
+    margin : 15px 15px 15px 0px ;
+    border : 1px solid rgb(73, 72, 72);
+    border-radius: 5px ;
+}
+
+#yes-button:hover, #no-button:hover {
+    border: 1.5px solid black; 
+}
+
+#xxs-button{
+    width : 40px ;
+    height : 30px ;
+    background-color: white ;
+    color : rgb(68, 67, 67) ;
+    margin : 15px 10px 10px 15px ;
+    border : 1px solid rgb(73, 72, 72) ;
+    border-radius: 5px ;
+}
+
+
+.size-button{
+    width : 40px ;
+    height : 30px ;
+    background-color: white ;
+    color : rgb(68, 66, 66) ;
+    margin : 15px 10px 10px 0px ;
+    border : 1px solid rgb(73, 72, 72);
+    border-radius: 5px ;
+}
+
+#xxs-button:hover, #xs-button:hover, #s-button:hover, #m-button:hover , #l-button:hover{
+    border: 1.5px solid black;  
+}
+
+#empty-div1122{
+    width : 1240px ;
+    height : 50px;
+    background-color: white ;
+}
+
+
+#sign-up-div{
+    width : 1240px ;
+    height : 280px ;
+    background-color: rgba(0,153,68,0.19);
+    display: flex ;
+}
+
+#sign-up-heading-div{
+    width : 450px ;
+    height : 165px ;
+    background-color: rgba(0,0,0,0);
+    margin-top: 67px ;
+    margin-left: 50px ;
+}
+
+#sign-up-heading{
+    font-size: 41px ;
+    color : #094304 ;
+    font-family: "Playfair Display sc",serif ;
+}
+
+
+#div-for-content{
+    width : 600px ;
+    height : 200px ;
+    /* background-color: #094304; */
+    margin-top: 35px ;
+    margin-left: 20px ;
+}
+
+#email-input{
+    width : 500px ;
+    height : 40px ;
+    background-color: white ; 
+    padding-left: 10px ;
+    border : 1px solid rgb(174, 173, 173) ;
+    margin : 50px 0px 5px 15px ;
+}
+
+#subscribe-button{
+    width : 100px ;
+    height : 35px ;
+    margin-top: 4px ;
+    margin-left: 15px ;
+    text-align:center ;
+    /* padding-left: 10px ;
+    padding-top: 5px ; */
+    border : 1px solid rgb(162, 160, 160) ;
+    color: #333333 ;
+    font-family: "Baskervvile" , serif ;
+    font-size: 16px ;
+} 
+
+
+#clothes-variety-div{
+    width : 1240px ;
+    height : 850px ;
+    background-color: white;
+    display: flex ;
+    justify-content: center;
+    margin-top: 150px ;
+}
+
+.emptydivcontainer{
+    width : 413px ;
+    height : 740px ;
+    background-color: white;
+    /* flex-wrap: wrap; */
+}
+
+/* #semi-formal-empty-div{
+    background-color: #1B9C85;
+}
+
+#evening-empty-div{
+    background-color: #7a5ca6;
+}
+
+#valima-empty-div{
+    background-color: #9c1b53;
+} */
+
+.photo-div{
+    width : 320px ;
+    height : 470px ;
+    background-color: white ;
+    margin-left : 38px ;
+    /* border: 1px solid gray ; */
+}
+
+#semi-formal-photo-div{
+    background-image: url(photo1.jpg);
+    background-size: cover ;
+}
+
+#evening-photo-div{
+    background-image: url(photo2.jpg);
+    background-size: cover ;
+}
+
+#valima-photo-div{
+    background-image: url(photo3.jpg);
+    background-size: cover ;
+}
+
+.heading-under-photo{
+    font-size: 36px ;
+    font-family: "PlayaFair Display SC",serif ;
+    color : #094304 ;
+}
+
+.para-div{
+    width : 320px ;
+    height : 100px ;
+    /* background-color: white ; */
+    margin-left: 38px ;
+}
+
+.heading-div333{
+    width : 310px ;
+    height : 50px ;
+    /* background-color: #bd7171; */
+    margin : 10px ;
+    margin-left: 40px ;
+    text-align: start ;
+    
+}
+
+.para-under-heading{
+    font-size: 18px; 
+    color : #7A7A7A ;
+    font-family: "Roboto", serif ;
+}
+
+.shopnow-button-div{
+    width : 200px ;
+    height : 50px ;
+    background-color: white;
+    margin : 40px 15px 0px 130px  ; 
+}
+
+.shopnow-button{
+    width : 90px ;
+    height : 30px ;
+    background-color: #54595F ;
+    border : 0.5px solid #54595F;
+    color : white ;
+    margin-left: 35px ;
+}
+
+.shopnow-button:hover{
+    background-color: #094304;
+}
+
+#jewellery-mensattire-main-div{
+    width : 1240px ;
+    height : 830px;
+    background-color: white;
+    display: flex ;
+    align-content: center;
+    justify-content: center;
+}
+
+.emptydiv-22{
+    width : 600px ;
+    height : 780px ;
+    background-color: white ;
+    margin : 10px ;
+    
+}
+
+.hollow-heading-div22{
+    width : 570px ;
+    height : 80px ;
+    background-color: white; 
+    margin : 5px ;
+    padding-left : 20px ;
+    padding-top: 5px ;
+}
+
+.jewellery-attire-heading{
+    color : #094304 ;
+    font-size: 42px ;
+    font-family: "PlayFair Display SC", serif ;
+}
+
+
+.jewellery-attire-pic-div{
+    width : 520px ;
+    height: 460px ;
+    background-color: white ;
+    margin : 5px 5px 5px 45px  ;
+} 
+
+#jewellery-photo-div{
+    background-image: url(pic1.jpg);
+    background-size: cover ;
+}
+
+#mensattire-photo-div{
+    background-image: url(pic2.jpg);
+    background-size: cover ;
+}
+
+.jewellery-attire-para-div{
+    width : 441px ;
+    height : 120px ;
+    background-color: white ;
+    margin : 10px 10px 10px 64px  ;
+    padding : 10px ;
+}
+
+.jewellery-attire-para{
+    font-family: "Roboto", serif ;
+    font-size: 17px ;
+    color : #7A7A7A ;
+}
+
+.jewellery-attire-button{
+    width : 170px ;
+    height : 40px ;
+    background-color: #54595F ;
+    margin : 5px 5px 5px 280px ;
+    border: none ;
+}
+
+#jewellery-by-hina-text , #mens-attire-text{
+    color: white ;
+}
+
+#blank{
+    width:100%;
+    height:5550px;
+}
+
+
+#footer{
+    height : 220px;
+    background-color: rgba(94, 138, 94, 0.3) ;   
+    border-top : 1px solid rgba(94, 138, 94, 0.5) ;          
+    width: 100%; 
+    display: flex;
+    align-content: center;
+    justify-content: flex-end ;
+    flex-wrap: wrap;
+}
+
+.footer-tags{
+    color : 1B9C85 ;
+    font-size: 16px ;
+    font-family: "Baskervvile" , serif ;
+}
+
+#footer-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    max-width: 600px; /* Set a max width to control column width */
+}
+
+#footer-list li {
+    flex: 0 0 50%; /* Each item takes up 50% of the container width */
+    box-sizing: border-box; /* Ensure padding and border are included in the total width */
+    padding: 5px; /* Optional: Add padding for spacing */
+}
+
+ul{
+    list-style-type: none;
+}
+
+#below-footer{
+    width : 100% ;
+    height : 60px; 
+    background-color: rgba(94, 138, 94, 0.3);
+    border-top : 1px solid rgba(94, 138, 94, 0.5);
+    display: flex ;
+    padding-top: 25px;
+}
+
+#copyright-info{
+    color : #454F5E ;
+    font-size: 17px ;
+    font-family: "Baskervville" , serif;
+}
+
+#logos-div{
+    width : 330px ;
+    height : 50px ;
+    /* background-color: #535d52; */
+    margin-left: 500px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#fb-logo-div{
+    width : 35px ;
+    height : 35px ;
+}
+
+#fb-logo{
+    width : 35px ;
+    height : 35px ;
+}
+
+#fb-logo:hover {
+    filter : grayscale(100%) ;
+}
+
+#insta-logo-div{
+    width : 35px ;
+    height : 35px ;
+}
+
+#insta-logo{
+    width : 35px ;
+    height : 35px ;
+}
+
+#insta-logo:hover{
+    filter : grayscale(100%) ;
+}
+
+#tiktok-logo-div{
+    width : 35px ;
+    height : 35px ;
+}
+
+#tiktok-logo{
+    width : 35px ;
+    height : 35px ;
+}
+
+#tiktok-logo:hover{
+    filter : grayscale(100%) ;
+}
+
+#whatsapp-logo-div{
+    width : 35px ;
+    height : 35px ;
+}
+
+#whatsapp-logo{
+    width : 35px ;
+    height : 35px ;
+}
+
+#whatsapp-logo:hover{
+    filter : grayscale(100%) ;
+}
+
+#utube-logo-div{
+    width : 35px ;
+    height : 35px ;
+}
+
+#utube-logo{
+    width : 35px ;
+    height : 35px ;
+}
+
+#utube-logo:hover{
+    filter : grayscale(100%) ;
+}
