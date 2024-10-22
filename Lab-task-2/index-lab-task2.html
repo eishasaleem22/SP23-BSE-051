@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-lab-task2.css">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD Operations</h1>
+    
+    <!-- Create New Post -->
+    <h2>Create New Post</h2>
+    <form id="createPostForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" required></textarea>
+        <button type="submit">Create Post</button>
+    </form>
+
+    <!-- Read and Display Posts -->
+    <h2>All Posts</h2>
+    <button id="loadPosts">Load Posts</button>
+    <div id="posts"></div>
+
+    <!-- Update Post -->
+    <h2>Update Post</h2>
+    <form id="updatePostForm">
+        <label for="postId">Post ID:</label>
+        <input type="number" id="postId" name="postId" required>
+        <label for="newTitle">New Title:</label>
+        <input type="text" id="newTitle" name="newTitle" required>
+        <label for="newBody">New Body:</label>
+        <textarea id="newBody" name="newBody" required></textarea>
+        <button type="submit">Update Post</button>
+    </form>
+
+    <!-- Delete Post -->
+    <h2>Delete Post</h2>
+    <form id="deletePostForm">
+        <label for="deleteId">Post ID to Delete:</label>
+        <input type="number" id="deleteId" name="deleteId" required>
+        <button type="submit">Delete Post</button>
+    </form>
+</div>
+    
+
+    <script src = "first-lab-task2.js"></script>
+</body>
+</html>
