@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    width: 35%;
+    background-color: #3d5a80;
+    color: white;
+    padding: 20px;
+}
+
+.right-section {
+    width: 65%;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3d5a80;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact, .education, .hobbies, .languages {
+    margin-bottom: 30px;
+}
+
+.skills ul {
+    list-style-type: none;
+}
+
+.skills ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.skills ul li::before {
+    content: "★";
+    color: #fca311;
+    margin-right: 10px;
+} 
+
+
+.profile{
+    height : 250px ;
+}
+
+
+#pfp-div{
+    width : 200px ;
+    height :220px;
+    background-color: aqua;
+    margin-left : 50px ;
+    background-image: url(image.jpeg);
+    background-size: cover;
+}
+
+#intro-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(91, 86, 86, 0.9);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    width: 400px;
+    z-index: 1000;
+}
