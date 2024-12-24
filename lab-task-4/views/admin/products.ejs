@@ -1,0 +1,100 @@
+<div class="container mt-5">
+  <h3 class="text-center text-primary mb-4"><%- pageTitle %></h3>
+
+  <!-- Sorting Section -->
+  <form action="/admin/products" method="get" class="mb-4">
+    <h5 class="text-primary mb-3">Sort Products</h5>
+    <div class="row mb-2">
+      <div class="col-md-2">
+        <select name="sortBy" class="form-control">
+          <option value="createdAt" <%= sortBy === 'createdAt' ? 'selected' : '' %>>Date</option>
+          <option value="price" <%= sortBy === 'price' ? 'selected' : '' %>>Price</option>
+          <option value="title" <%= sortBy === 'title' ? 'selected' : '' %>>Title</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <select name="sortOrder" class="form-control">
+          <option value="desc" <%= sortOrder === 'desc' ? 'selected' : '' %>>Descending</option>
+          <option value="asc" <%= sortOrder === 'asc' ? 'selected' : '' %>>Ascending</option>
+        </select>
+      </div>
+      <div class="col-md-1">
+        <button type="submit" class="btn btn-info w-100">Sort</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Filtering Section -->
+  <form action="/admin/products" method="get" class="mb-4">
+    <h5 class="text-primary mb-3">Filter Products</h5>
+    <div class="row mb-2">
+      <div class="col-md-2">
+        <input type="number" name="minPrice" class="form-control" placeholder="Min Price" value="<%= minPrice || '' %>">
+      </div>
+      <div class="col-md-2">
+        <input type="number" name="maxPrice" class="form-control" placeholder="Max Price" value="<%= maxPrice || '' %>">
+      </div>
+      <div class="col-md-3">
+        <input type="text" name="search" class="form-control" placeholder="Search products" value="<%= search || '' %>">
+      </div>
+      <div class="col-md-1">
+        <button type="submit" class="btn btn-primary w-100">Filter</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Search Input -->
+  <form action="/admin/products" method="get" class="mb-4">
+    <h5 class="text-primary mb-3">Search Products</h5>
+    <div class="row">
+      <div class="col-md-4">
+        <input type="text" name="search" class="form-control" placeholder="Search products by title" value="<%= search || '' %>">
+      </div>
+      <div class="col-md-1">
+        <button type="submit" class="btn btn-secondary w-100">Search</button>
+      </div>
+    </div>
+  </form>
+
+  <!-- Create Product Button -->
+  <div class="d-flex justify-content-end mb-3">
+    <a href="/admin/createForm" class="btn btn-success btn-lg">Create New Product</a>
+  </div>
+
+  <!-- Pagination -->
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item <%= page == 1 ? 'disabled' : '' %>">
+        <a class="page-link" href="/admin/products/<%= parseInt(page) - 1 %>"><<</a>
+      </li>
+      <% for (let index = 1; index <= totalPages; index++) { %>
+      <li class="page-item <%= index == page ? 'active' : '' %>">
+        <a class="page-link" href="/admin/products/<%= index %>"><%= index %></a>
+      </li>
+      <% } %>
+      <li class="page-item <%= page == totalPages ? 'disabled' : '' %>">
+        <a class="page-link" href="/admin/products/<%= parseInt(page) + 1 %>">>></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Product Cards -->
+  <div class="row">
+    <% for (let index = 0; index < products.length; index++) { %>
+    <div class="col-md-4 mb-4">
+      <div class="card shadow-sm h-100">
+        <img src="<%= products[index].picture %>" class="card-img-top" alt="<%= products[index].title %>" style="height: 150px; object-fit: cover">
+        <div class="card-body">
+          <h5 class="card-title text-center"><%= products[index].title %></h5>
+          <p class="card-text text-center text-primary">$<%= products[index].price %></p>
+          <p class="card-text"><%= products[index].description %></p>
+        </div>
+        <div class="card-footer d-flex justify-content-center">
+          <a href="/admin/products/editForm/<%= products[index]._id %>" class="btn btn-warning btn-sm me-1">Edit</a>
+          <a href="/admin/products/delete/<%= products[index]._id %>" class="btn btn-danger btn-sm ms-1">Delete</a>
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>

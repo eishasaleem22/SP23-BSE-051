@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("assets/heroImg.avif");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+      }
+      .signup-form {
+        background-color: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+      .form-control {
+        background-color: #f1f3f5;
+        border: none;
+        padding-left: 2.5rem;
+      }
+      .input-icon {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #adb5bd;
+      }
+      .btn-custom {
+        background-color: #ba864a;
+        border-color: #ba864a;
+        color: white;
+        transition: all 0.3s ease;
+      }
+      .btn-custom:hover {
+        background-color: transparent !important;
+        border-color: #ba864a !important;
+        color: #ba864a !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="backdrop min-vh-100 d-flex align-items-center justify-content-center"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-lg-4">
+            <div class="signup-form">
+              <h2 class="text-center mb-3">Create Account</h2>
+              <div class="text-center mb-3">
+                <div class="bg-light d-inline-block rounded-circle p-2">
+                  <i class="fas fa-user-plus fa-2x text-secondary"></i>
+                </div>
+              </div>
+              <form action="/auth/signup" method="POST">
+                <div class="mb-2 position-relative">
+                  <i class="fas fa-user input-icon"></i>
+                  <input
+                    type="name"
+                    class="form-control"
+                    placeholder="Full Name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="mb-2 position-relative">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                    name="email"
+                    required
+                  />
+                </div>
+                <div class="mb-2 position-relative">
+                  <i class="fas fa-lock input-icon"></i>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                    name="password"
+                    required
+                  />
+                </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-custom">SIGN UP</button>
+                </div>
+              </form>
+              <div class="text-center mt-3">
+                <span class="text-muted">Already have an account?</span>
+                <a href="/auth/login" class="text-primary">Log In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

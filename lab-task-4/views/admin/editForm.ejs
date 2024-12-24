@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Product</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #343a40;
+        color: #f8f9fa;
+      }
+      .container {
+        max-width: 550px;
+        margin-top: 30px;
+      }
+      .card {
+        border: none;
+        border-radius: 10px;
+        background-color: #495057;
+        color: #f8f9fa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .card-header {
+        background-color: #212529;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .form-label {
+        color: #ced4da;
+      }
+      .form-control {
+        background-color: #6c757d;
+        border: 1px solid #495057;
+        color: #f8f9fa;
+        border-radius: 5px;
+      }
+      .form-control:focus {
+        border-color: #adb5bd;
+        box-shadow: none;
+      }
+      .btn-info {
+        background-color: #17a2b8;
+        border: none;
+        border-radius: 5px;
+        padding: 0.6rem;
+      }
+      .btn-info:hover {
+        background-color: #138496;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">Edit Product</div>
+        <div class="card-body p-2">
+          <form action="" method="post">
+            <div class="mb-3">
+              <label for="titleInput" class="form-label">Title</label>
+              <input
+                name="title"
+                type="text"
+                class="form-control"
+                id="titleInput"
+                placeholder="Enter Title"
+                value="<%= product.title %>"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="titleInput" class="form-label">Picture</label>
+              <input
+                name="picture"
+                type="file"
+                class="form-control"
+                id="picture"
+                aria-describedby="emailHelp"
+                placeholder="Upload Product Picture"
+                value="<%= product.picture %>"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="descriptionInput" class="form-label"
+                >Description</label
+              >
+              <textarea
+                name="description"
+                class="form-control"
+                id="descriptionInput"
+                placeholder="Enter Description"
+                rows="2"
+                required
+              >
+<%= product.description %></textarea
+              >
+            </div>
+            <div class="mb-3">
+              <label for="priceInput" class="form-label">Price</label>
+              <div class="input-group">
+                <span class="input-group-text">PKR</span>
+                <input
+                  name="price"
+                  type="number"
+                  class="form-control"
+                  id="priceInput"
+                  placeholder="Enter Price"
+                  value="<%= product.price %>"
+                  required
+                />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-info w-100">
+              Edit Product
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

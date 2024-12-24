@@ -1,0 +1,32 @@
+<style>
+  .its-hero {
+    display: flex;
+    align-items: center;
+    background-color: #2c4a5e;
+    justify-content: center;
+    padding: 10px;
+  }
+  .its-hero a {
+    color: white;
+  }
+</style>
+
+<div class="container hero-content">
+  <div class="its-hero">
+    <a href="/admin/products" class="cta-button" style="margin-left: 10px"
+      >Admin Panel</a
+    >
+    <% if (user) { %>
+    <a href="/logout" class="cta-button" style="margin-left: 10px">Logout</a>
+    <% } else { %>
+    <a href="/auth/login" class="cta-button" style="margin-left: 10px">Login</a>
+    <a href="/auth/signup" class="cta-button" style="margin-left: 10px"
+      >SignUp</a
+    >
+    <% } %>
+
+    <a href="/admin/user-products" class="cta-button" style="margin-left: 10px"
+      >See Products</a
+    >
+  </div>
+</div>
