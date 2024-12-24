@@ -1,0 +1,39 @@
+<title>Admin - Category Management</title>
+<h3 class="text-center text-primary mb-4"><%- pageTitle %></h3>
+
+<div class="d-flex justify-content-end mb-3">
+  <a href="/admin/categoryForm" class="btn btn-success btn-lg">Create New Category</a>
+</div>
+<table class="table table-striped table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th>Category Name</th>
+      <th>Image Name</th>
+      <th>Type</th>
+      <th>Link Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% categories.forEach((category) => { %>
+    <tr>
+      <td><%= category.categoryName %></td>
+      <td><img src="<%= category.imageName %>" alt="Category Image" style="width: 100px;" /></td>
+      <td><%= category.type %></td>
+      <td><%= category.linkName %></td>
+      <td>
+        <a
+          href="/admin/category/editForm/<%= category._id %>"
+          class="btn btn-warning btn-sm mr-2"
+          >Edit</a
+        >
+        <a
+          href="/admin/category/delete/<%= category._id %>"
+          class="btn btn-danger btn-sm"
+          >Delete</a
+        >
+      </td>
+    </tr>
+    <% }); %>
+  </tbody>
+</table>
